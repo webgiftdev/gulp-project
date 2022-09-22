@@ -35,6 +35,8 @@ Copy png, jpg and gif images to the folder ./exportWebP/images/. The converted *
 ### minifyImages
 Place png, jpg, gif, svg and webp images to the folder ./minifyImages/images/ and get the minified version for each them under ./minifyImages/ folder.
 
+[![Screenshot-2022-09-22-at-14-51-02.png](https://i.postimg.cc/RZQZjdKy/Screenshot-2022-09-22-at-14-51-02.png)](https://postimg.cc/TK1xbrkJ)
+
 `gulp minifyImages`
 
 
