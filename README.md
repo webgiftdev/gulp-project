@@ -58,3 +58,6 @@ Place HTML files to the folder ./minifyHTML/unminified/ and get the results unde
 Locate CSS, JS and HTML files to the folder ./beautify/files/ and get their human readable version for each one of them under ./beautify/ folder.
 
 `gulp beautify`
+
+
+This tool is used by [Webgift dev](https://webgift.dev)

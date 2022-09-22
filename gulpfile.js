@@ -1,3 +1,5 @@
+/* Stratakis Stavros by webgift dev (https://webgift.dev - https://webgift.gr) */
+
 import gulp from 'gulp';
 import imagemin, {gifsicle, mozjpeg, optipng, svgo} from 'gulp-imagemin';
 import webp from 'imagemin-webp';
