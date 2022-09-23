@@ -119,7 +119,6 @@ gulp.task('clean', function() {
       '!minifyHTML/unminified',
       'beautify/*',
       'beautify/files/*',
-      '!beautify/files',
-      '!.DS_Store'
+      '!beautify/files'
     ]);
 });
