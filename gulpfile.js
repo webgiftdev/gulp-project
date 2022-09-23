@@ -120,5 +120,6 @@ gulp.task('clean', function() {
       'beautify/*',
       'beautify/files/*',
       '!beautify/files',
+      '!.DS_Store'
     ]);
 });
