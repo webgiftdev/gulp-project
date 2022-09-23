@@ -103,22 +103,42 @@ gulp.task('beautify', function () {
 gulp.task('clean', function() {
   return deleteAsync([
       'exportWebP/*',
+      '!exportWebP/.DS_Store',
       'exportWebP/images/*',
       '!exportWebP/images',
+      '!exportWebP/images/.DS_Store',
+
       'minifyImages/*',
+      '!minifyImages/.DS_Store',
       'minifyImages/images/*',
       '!minifyImages/images',
+      '!minifyImages/images/.DS_Store',
+
+      
       'minifyCSS/*',
+      '!minifyCSS/.DS_Store',
       'minifyCSS/unminified/*',
       '!minifyCSS/unminified',
+      '!minifyCSS/unminified/.DS_Store',
+
       'minifyJS/*',
+      '!minifyJS/.DS_Store',
       'minifyJS/unminified/*',
       '!minifyJS/unminified',
+      '!minifyJS/unminified/.DS_Store',
+
+      
       'minifyHTML/*',
+      '!minifyHTML/.DS_Store',
       'minifyHTML/unminified/*',
       '!minifyHTML/unminified',
+      '!minifyHTML/unminified/.DS_Store',
+
+      
       'beautify/*',
+      '!beautify/.DS_Store',
       'beautify/files/*',
-      '!beautify/files'
+      '!beautify/files',
+      '!beautify/files/.DS_Store'
     ]);
 });
