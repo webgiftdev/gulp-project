@@ -7,7 +7,13 @@ Convert png, jpg and gif images to WebP, minify all these images' types (jpg, pn
 
 ## Install and configure
 ### Clone the repository
-`git clone https://github.com/webgiftdev/gulp-project.git` and then `cd gulp-project`
+```shell
+git clone https://github.com/webgiftdev/gulp-project.git
+``` 
+and then 
+```shell 
+cd gulp-project
+```
 
 ### Check for node, npm, and npx
 [Follow these quick start tutorial](https://gulpjs.com/docs/en/getting-started/quick-start) from Gulp official website and verify if you have installed node, npm and npx.
@@ -24,43 +30,57 @@ Thats it!
 
 ## Usage
 ### exportWebP
-Copy png, jpg and gif images to the folder **exportWebP/images/**. 
+Copy png, jpg and gif images to the folder `exportWebP/images/`. 
 
-The converted **WebP** files will be located under **exportWebP/**.
+The converted **WebP** files will be located under `exportWebP/`.
 
-`gulp exportWebP`
+```shell
+gulp exportWebP
+```
 
 [![Screenshot-2022-09-22-at-14-06-15.png](https://i.postimg.cc/g056rr5W/Screenshot-2022-09-22-at-14-06-15.png)](https://postimg.cc/Mc7GFZqP)
 
 
 ### minifyImages
-Place png, jpg, gif, svg and webp images to the folder **minifyImages/images/** and get the minified version for each them under **minifyImages/** folder.
+Place png, jpg, gif, svg and webp images to the folder `minifyImages/images/` and get the minified version for each them under `minifyImages/` folder.
 
-`gulp minifyImages`
+```shell
+gulp minifyImages
+```
 
 [![Screenshot-2022-09-22-at-14-51-02.png](https://i.postimg.cc/RZQZjdKy/Screenshot-2022-09-22-at-14-51-02.png)](https://postimg.cc/TK1xbrkJ)
 
 
 ### minifyCSS
-Locate css files to the folder **minifyCSS/unminified/** and get the minified version under **minifyCSS/** folder.
+Locate css files to the folder `minifyCSS/unminified/` and get the minified version under `minifyCSS/` folder.
 
-`gulp minifyCSS`
+```shell
+gulp minifyCSS
+```
+
 
 ### minifyJS
-Copy javascript (js) files to the folder **minifyJS/unminified/** and get the minified version for each them under **minifyJS/** folder.
+Copy javascript (js) files to the folder `minifyJS/unminified/` and get the minified version for each them under `minifyJS/` folder.
 
-`gulp minifyJS`
+```shell
+gulp minifyJS
+```
+
 
 ### minifyHTML
-Place HTML files to the folder **minifyHTML/unminified/** and get the results under **minifyHTML/** folder.
+Place HTML files to the folder `minifyHTML/unminified/` and get the results under `minifyHTML/` folder.
 
-`gulp minifyHTML`
+```shell
+gulp minifyHTML
+```
 
 
 ### beautify
-Locate CSS, JS and HTML files to the folder **beautify/files/** and get their human readable version for each one of them under **beautify/** folder.
+Locate CSS, JS and HTML files to the folder `beautify/files/` and get their human readable version for each one of them under `beautify/` folder.
 
-`gulp beautify`
+```shell
+gulp beautify
+```
 
 
 This tool is used by [webgift dev](https://webgift.dev) - a web gift-ed office building custom projects online.
