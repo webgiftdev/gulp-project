@@ -63,4 +63,4 @@ Locate CSS, JS and HTML files to the folder **beautify/files/** and get their hu
 `gulp beautify`
 
 
-This tool is used by [webgift dev](https://webgift.dev) - a web gift-ed office bulding custom projects online.
+This tool is used by [webgift dev](https://webgift.dev) - a web gift-ed office building custom projects online.
