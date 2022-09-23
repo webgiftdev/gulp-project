@@ -87,4 +87,12 @@ gulp beautify
 ```
 
 
+### Clean files
+Delete all files from the folders. 
+
+```shell
+gulp clean
+```
+
+
 This tool is created and used by [webgift dev](https://webgift.dev). A gifted office that build custom projects online!

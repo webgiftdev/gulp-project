@@ -1,4 +1,4 @@
-/* Stratakis Stavros by webgift dev (https://webgift.dev - https://webgift.gr) */
+/* Stratakis Stavros https://webgift.dev - https://webgift.gr */
 
 import gulp from 'gulp';
 import imagemin, {gifsicle, mozjpeg, optipng, svgo} from 'gulp-imagemin';
@@ -8,6 +8,7 @@ import minifyCss from 'gulp-clean-css';
 import minify from 'gulp-minify';
 import htmlmin from 'gulp-htmlmin';
 import beautify from 'gulp-jsbeautifier';
+import {deleteAsync} from 'del';
 
 
 /* Convert images to WebP */
@@ -24,16 +25,16 @@ gulp.task('exportWebP', function() {
 });
 
 
-/* Minify Images file PNG, JPEG, GIF, SVG and WebP */
+/* Minify PNG, JPEG, GIF, SVG and WebP images */
 gulp.task('minifyImages', function() {
   let src = "./minifyImages/images/*.+(png|jpg|gif|svg|webp)";
   let dest = "./minifyImages";
 
   return gulp.src(src)
     .pipe(imagemin([
-        gifsicle({interlaced: true}), //GIF OMG
-        mozjpeg({quality: 80, progressive: true}), //Perfect minify
-        optipng({ optimizationLevel: 3 }), //Perfect minify
+        gifsicle({interlaced: true}), //Well done
+        mozjpeg({quality: 80, progressive: true}), //Nice
+        optipng({ optimizationLevel: 3 }), //Nice
         svgo({ // Nice
           plugins: [
             {
@@ -46,12 +47,13 @@ gulp.task('minifyImages', function() {
             }
           ]
         }),
-        webp({quality: 75}) //Not Good
+        webp({quality: 75}) //Don't like
       ]))
     .pipe(gulp.dest(dest));
 });
 
 
+/* Minify CSS task */
 gulp.task('minifyCSS', function () {
   let src = "./minifyCSS/unminified/*.css";
   let dest = "./minifyCSS";
@@ -63,6 +65,7 @@ gulp.task('minifyCSS', function () {
 });
 
 
+/* Minify JS task */
 gulp.task('minifyJS', function () {
   let src = "./minifyJS/unminified/*.js";
   let dest = "./minifyJS";
@@ -74,6 +77,7 @@ gulp.task('minifyJS', function () {
 });
 
 
+/* Minify HTML task */
 gulp.task('minifyHTML', function () {
   let src = "./minifyHTML/unminified/*.html";
   let dest = "./minifyHTML";
@@ -84,6 +88,7 @@ gulp.task('minifyHTML', function () {
 });
 
 
+/* Beautify CSS, JS and HTML task*/
 gulp.task('beautify', function () {
   let src = "./beautify/files/*.+(css|js|html)";
   let dest = "./beautify";
@@ -93,3 +98,27 @@ gulp.task('beautify', function () {
    .pipe(gulp.dest(dest));
 });
 
+
+/* Clean all files from folders */
+gulp.task('clean', function() {
+  return deleteAsync([
+      'exportWebP/*',
+      'exportWebP/images/*',
+      '!exportWebP/images',
+      'minifyImages/*',
+      'minifyImages/images/*',
+      '!minifyImages/images',
+      'minifyCSS/*',
+      'minifyCSS/unminified/*',
+      '!minifyCSS/unminified',
+      'minifyJS/*',
+      'minifyJS/unminified/*',
+      '!minifyJS/unminified',
+      'minifyHTML/*',
+      'minifyHTML/unminified/*',
+      '!minifyHTML/unminified',
+      'beautify/*',
+      'beautify/files/*',
+      '!beautify/files',
+    ]);
+});

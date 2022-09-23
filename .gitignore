@@ -1,3 +1,9 @@
 node_modules/
+exportWebP/
+minifyImages/
+minifyCSS/
+minifyJS/
+minifyHTML/
+beautify/
 package-lock.json
 /.DS_Store
