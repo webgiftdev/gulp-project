@@ -19,12 +19,16 @@ cd gulp-project
 [Follow these quick start tutorial](https://gulpjs.com/docs/en/getting-started/quick-start) from Gulp official website and verify if you have installed node, npm and npx.
 
 ### Install the gulp command line utility
-`npm install --global gulp-cli`
+```shell
+npm install --global gulp-cli
+```
 
 Try `sudo` npm.. in case that you have privileges issues.
 
 ### Synchronize your Gulp installation with the required dependencies
-`npm i -D gulp`
+```shell
+npm i -D gulp
+```
 
 Thats it! 
 
