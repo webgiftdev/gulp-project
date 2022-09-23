@@ -1,7 +1,7 @@
 # gulp-project
 ## Automate web developer's daily routine with Gulp.
 
-If you're a terminal nerd this tool will help you increase your productivity! 
+If you're a terminal nerd and a web developer this tool will help you increase your productivity! 
 
 Convert png, jpg and gif images to WebP, minify all these images' types (jpg, png, gif, webp and svg), minify and beautify CSS, JS, HTML are just the begging! 
 
@@ -12,7 +12,7 @@ Hope like it! Let's get started by **Opening the terminal**!
 `cd gulp-project`
 
 ### Check for node, npm, and npx
-[Follow these quick start tutorial](https://gulpjs.com/docs/en/getting-started/quick-start) from Gulp documentation and verify if you have installed node, npm and npx.
+[Follow these quick start tutorial](https://gulpjs.com/docs/en/getting-started/quick-start) from Gulp official website and verify if you have installed node, npm and npx.
 
 ### Install the gulp command line utility
 `npm install --global gulp-cli`
