@@ -9,6 +9,7 @@ import minify from 'gulp-minify';
 import htmlmin from 'gulp-htmlmin';
 import beautify from 'gulp-jsbeautifier';
 import {deleteAsync} from 'del';
+//import concat from 'gulp-concat';
 
 
 /* Convert images to WebP */
@@ -60,7 +61,7 @@ gulp.task('minifyCSS', function () {
 
     return gulp.src(src)
         .pipe(minifyCss())
-        //.pipe(concat('stylesheet.css')) //in case that we need to combine all in one file
+        //.pipe(concat('template.min.css')) //Combine all files into one file
    .pipe(gulp.dest(dest));
 });
 
@@ -72,7 +73,7 @@ gulp.task('minifyJS', function () {
 
     return gulp.src(src)
         .pipe(minify({ext: { min: '.js'}, noSource: true}))
-        //.pipe(concat('bundle.js'))
+        //.pipe(concat('main.min.js')) //Combine all files into one file
     .pipe(gulp.dest(dest));
 });
 
