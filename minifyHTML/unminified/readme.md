@@ -1,1 +1,0 @@
-Don't remove the ***current*** folder.
