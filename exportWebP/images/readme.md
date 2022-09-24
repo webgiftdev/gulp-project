@@ -1,1 +1,1 @@
-Don't remove the ***parent*** folder.
+Don't remove the ***current*** folder.
