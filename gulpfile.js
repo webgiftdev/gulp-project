@@ -1,4 +1,4 @@
-/* Stratakis Stavros https://webgift.dev - https://webgift.gr */
+/* Stratakis Stavros at https://webgift.dev - https://webgift.gr */
 
 import gulp from 'gulp';
 import imagemin, {gifsicle, mozjpeg, optipng, svgo} from 'gulp-imagemin';
