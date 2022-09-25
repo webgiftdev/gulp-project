@@ -3,13 +3,13 @@
 import gulp from 'gulp';
 import imagemin, {gifsicle, mozjpeg, optipng, svgo} from 'gulp-imagemin';
 import webp from 'imagemin-webp';
-import extReplace from 'gulp-ext-replace';
+import ext_replace from 'gulp-ext-replace';
 import minifyCss from 'gulp-clean-css';
 import minify from 'gulp-minify';
 import htmlmin from 'gulp-htmlmin';
 import beautify from 'gulp-jsbeautifier';
 import {deleteAsync} from 'del';
-//import concat from 'gulp-concat';
+//import concat from 'gulp-concat'; // Uncomment the line to combine all files into one
 
 
 /* Convert images to WebP */
@@ -21,7 +21,7 @@ gulp.task('exportWebP', function() {
     .pipe(imagemin([
         webp({quality: 80})
     ]))
-    .pipe(extReplace(".webp"))
+    .pipe(ext_replace(".webp"))
     .pipe(gulp.dest(dest));
 });
 
@@ -61,7 +61,7 @@ gulp.task('minifyCSS', function () {
 
     return gulp.src(src)
         .pipe(minifyCss())
-        //.pipe(concat('template.min.css')) //Combine all files into one file
+        //.pipe(concat('main.min.css')) // Uncomment the line to combine all files into one
    .pipe(gulp.dest(dest));
 });
 
@@ -73,7 +73,7 @@ gulp.task('minifyJS', function () {
 
     return gulp.src(src)
         .pipe(minify({ext: { min: '.js'}, noSource: true}))
-        //.pipe(concat('main.min.js')) //Combine all files into one file
+        //.pipe(concat('main.min.js')) // Uncomment the line to combine all files into one
     .pipe(gulp.dest(dest));
 });
 
